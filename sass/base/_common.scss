@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--head-color);
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:hover, :focus {
+    transform: 250ms;
+}
+
+.studio {
+    background-color: var(--main-light-color);
+}
+
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio {
+    background-color: var(--main-light-color);
+}
+
+
+.image {
+    display: block;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--<link rel="stylesheet" href="./css/styles.css">-->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!--Шапка сайту-->
+
+    <header class="header">
+        <div class="container header-nav">
+        <a href="./index.html" class="header-logo">Web<span class="header-logo-sep">Studio</span></a>
+        <nav class="navigation">
+        <ul class="list navigation__list">
+            <li class="navigation__link">
+                <a href="./index.html" class="header-word">Студия</a>
+            </li>
+            <li class="navigation__link">
+                <a href="./portfolio.html" class="header-word current">Портфолио</a>
+            </li>
+            <li class="navigation__link" class="header-word">
+                <a href="" class="header-word">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="connect">
+        <ul class="list connect__list">
+            <li class="connect__item">
+                <a href="mailto:info@devstudio.com" class="header-mail">
+                    <svg class="header-mail-icon" width="16px" height="12px">
+                        <use href="./images/header-icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                
+            </li>
+                
+            </li>
+            <li class="connect__item">
+                
+                <a href="tel:+380961111111" class="header-tel"> 
+                    <svg class="header-tel-icon" width="10px" height="16px">
+                        <use href="./images/header-icons.svg#icon-smartphone"></use>
+                    </svg> +38 096 111 11 11</a>
+                
+            </li>
+        </ul>
+    </div>
+    </header>
+    
+    <main class="portfolio">
+        <!--Фільтр-->
+        <section class="section">
+            <div class="container">
+      <ul class="list btn-list">
+        <li class="btn-list-element"><button type="button" class="filter-btn filter-btn1">Все</button></li>
+        <li class="btn-list-element"><button type="button" class="filter-btn filter-btn2">Веб-сайты</button></li>
+        <li class="btn-list-element"><button type="button" class="filter-btn filter-btn3">Приложения</button></li>
+        <li class="btn-list-element"><button type="button" class="filter-btn filter-btn4">Дизайн</button></li>
+        <li class="btn-list-element"><button type="button" class="filter-btn filter-btn5">Маркетинг</button></li>
+      </ul>
+      <ul class="list card-list">
+        <li class="card-list-element"> <div class="sliders"> <img class="image" src="./images/por1.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div><div class="filter-title-div"><p class="filter-title">Технокряк</p> <p class="filter-text">Веб-сайт</p></div>  </li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por2.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Постер New Orlean vs Golden Star</p> <p class="filter-text">Дизайн</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por3.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Ресторан Seafood</p> <p class="filter-text">Приложение</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por4.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Проект Prime</p> <p class="filter-text">Маркетинг</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por5.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Проект Boxes</p> <p class="filter-text">Приложение</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por6.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Inspiration has no Borders</p> <p class="filter-text">Веб-сайт</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por7.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Издание Limited Edition</p> <p class="filter-text">Дизайн</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por8.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Проект LAB</p> <p class="filter-text">Маркетинг</p></div></li>
+        <li class="card-list-element"> <div class="sliders"><img class="image" src="./images/por9.jpg" alt="Фотография" width="370" height="294"> <p class="filter-slider">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div> <div class="filter-title-div"><p class="filter-title">Growing Business</p> <p class="filter-text">Приложение</p></div></li>
+      </ul>
+    </div>
+    </section>
+    </main>
+</body>
+
+<!--Підвал сайту-->
+<footer class="footer">
+    <div class="container footer-element">
+    
+    <address class="address">
+        <div><a href="./index.html" class="footer-logo footer-element">Web<span class="footer-logo-sep">Studio</span></a>
+        <ul class="list footer__content">
+        <li class="footer__location"><a href="https://goo.gl/maps/ccbDrzZSvDmgtuJD7"  target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <li class="footer__mail"><a href="mailto:info@example.com"></a>info@example.com</li>
+        <li class="footer__tel"><a href="tel:+380991111111"></a>+38 099 111 11 11</li>
+        </ul></div>
+        <ul class="list footer__soc">
+            <p class="footer__soc-title">присоиденяйтесь</p>
+            <ul class="footer__soc-list list">
+                <li class="footer__soc-item">
+                    <a href="" class="footer__link link">
+                        <svg class="footer-soc-list-icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
+
+                <li class="footer-soc-list-item">
+                    <a href="" class="footer__link link">
+                        <svg class="footer-soc-list-icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a></li>
+
+                <li class="footer-soc-list-item">
+                    <a href="" class="footer__link link">
+                        <svg class="footer-soc-list-icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a></li>
+
+                <li class="footer-soc-list-item">
+                    <a href="" class="footer__link link">
+                        <svg class="footer-soc-list-icon" width="20px" height="20px">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a></li>
+                    </ul>
+        </ul>
+        <section class="tg-section">
+        <p class="footer__soc-title footer-title-2">подпишитесь на нашу рассылку</p>
+        <form class="online-form">
+            <input type="text" class="online-input" placeholder="E-mail">
+            <div class="last-button">
+            <button type="button" class="online-form-btn">Подписаться <span><svg class="form-btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg></span></button></div>
+        </form></section>
+        
+    </address>
+</div>
+
+</footer>
+
+
+
+</html>
