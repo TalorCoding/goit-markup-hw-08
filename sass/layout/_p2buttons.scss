@@ -1,12 +1,12 @@
 .btn-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: left;
     margin-bottom: 50px;
+    gap: 8px;
 }
 
-.btn-list-element:not(:last-child) {
-    margin-right: 8px;
-}
+
 
 .filter-btn {
     font-family: 'Roboto';
@@ -58,4 +58,16 @@ line-height: 30px;
 letter-spacing: 0.03em;
 color: var(--text-color);
 
+}
+
+@media screen and (min-width: 768px) {
+    .btn-list{
+    justify-content: center;}
+}
+
+@media screen and (min-width: 1200px) {
+    .btn-list {
+        justify-content: center;
+    }
+    
 }

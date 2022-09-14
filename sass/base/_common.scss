@@ -1,3 +1,10 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--head-color);
@@ -14,7 +21,7 @@ ul {
 
 
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -35,6 +42,11 @@ ul {
     padding-bottom: 94px;
 }
 
+.filter-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .portfolio {
     background-color: var(--main-light-color);
 }
@@ -42,4 +54,25 @@ ul {
 
 .image {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+    width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+    width: 1200px;
+    }
 }

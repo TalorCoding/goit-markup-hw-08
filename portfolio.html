@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 <body>
     <!--Шапка сайту-->
 
-    <header class="header">
+<header class="header">
         <div class="container header-nav">
         <a href="./index.html" class="header-logo">Web<span class="header-logo-sep">Studio</span></a>
         <nav class="navigation">
@@ -55,11 +55,45 @@
             </li>
         </ul>
     </div>
+    <button type="button" class="mobile-menu-btn" data-Menu-open> <svg class="mobile-menu-bars" width="40px" height="40px">
+        <use href="./images/icons.svg#icon-mobile-menu"></use>
+    </svg> </button>
+    <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+            <div class="mob-div-top">
+        <button type="button" class="mobile-close-btn" data-Menu-close> <svg class="mobile-menu-close" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-mobile-menu-close"></use></svg></button>
+            <nav class="mob-menu-nav">
+            <ul class="mobile-link list">
+                <li class="mobile-item"><a href="./index.html">Студия</a></li>
+                <li class="mobile-item"><a href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-item">Контакты</li>
+                </ul>
+            <ul class="list mob-contact-list">
+                <li class="mobile-contacts">
+                    <a href="tel:+380961111111" class="mobile-mail">+38 096 111 11 11</a></li>
+                    
+                <li class="mobile-contacts">
+                    <a href="mailto:info@devstudio.com" class="mobile-tel">info@devstudio.com</li>
+            </ul>
+            <ul class="mob-soc-list list">
+                <li class="mob-soc-item"> <a href="">Instagram</a> </li>
+                <li class="mob-soc-item stripe"> <a href="">Twitter</a> </li>
+                <li class="mob-soc-item stripe"> <a href="">Facebook</a> </li>
+                <li class="mob-soc-item stripe"> <a href="">LinkedIn</a> </li>
+            </ul>
+        </nav>
+        </div>
+    
+        </div>
+    
+    </div>
+    </div>
     </header>
     
     <main class="portfolio">
         <!--Фільтр-->
-        <section class="section">
+        <section class="filter-section">
             <div class="container">
       <ul class="list btn-list">
         <li class="btn-list-element"><button type="button" class="filter-btn filter-btn1">Все</button></li>
@@ -89,13 +123,13 @@
     <div class="container footer-element">
     
     <address class="address">
-        <div><a href="./index.html" class="footer-logo footer-element">Web<span class="footer-logo-sep">Studio</span></a>
+        <div class="footer-block-1"><a href="./index.html" class="footer-logo footer-element">Web<span class="footer-logo-sep">Studio</span></a>
         <ul class="list footer__content">
         <li class="footer__location"><a href="https://goo.gl/maps/ccbDrzZSvDmgtuJD7"  target="_blank" rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a></li>
         <li class="footer__mail"><a href="mailto:info@example.com"></a>info@example.com</li>
         <li class="footer__tel"><a href="tel:+380991111111"></a>+38 099 111 11 11</li>
         </ul></div>
-        <ul class="list footer__soc">
+        <ul class="footer__soc list">
             <p class="footer__soc-title">присоиденяйтесь</p>
             <ul class="footer__soc-list list">
                 <li class="footer__soc-item">
@@ -127,8 +161,9 @@
                     </a></li>
                     </ul>
         </ul>
+    
         <section class="tg-section">
-        <p class="footer__soc-title footer-title-2">подпишитесь на нашу рассылку</p>
+        <p class="footer__soc-title footer-title-2">подпишитесь на рассылку</p>
         <form class="online-form">
             <input type="text" class="online-input" placeholder="E-mail">
             <div class="last-button">
@@ -136,12 +171,12 @@
                 <use href="./images/icons.svg#icon-icon-send"></use>
             </svg></span></button></div>
         </form></section>
-        
     </address>
+    
 </div>
 
 </footer>
-
+<script src="./js/menu.js"></script>
 
 
 </html>

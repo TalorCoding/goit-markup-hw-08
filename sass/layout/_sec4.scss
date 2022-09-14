@@ -12,6 +12,7 @@ margin-bottom: 50px;
 .clients__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -19,8 +20,8 @@ margin-bottom: 50px;
 .clients__link {
     fill: #AFB1B8;
     border: 1.5px solid #AFB1B8;
-    border-radius: 5px;
-    width: 170px;
+    border-radius: 4px;
+    width: 210px;
     height: 92px;
     display: flex;
     align-items: center;
@@ -33,4 +34,27 @@ margin-bottom: 50px;
         
     }
 }
+
+@media screen and (min-width: 768px) {
+    .clients__list {
+        flex-wrap: wrap;
+    }
+    .clients__item {
+        width: calc(100% - 30px) / 2;
+    }
+    .clients__link {
+        width: 226px;
+        height: 92px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients__link {
+        width: 170px;
+        height: 92px;
+    }
+}
+
+
+
 
