@@ -470,15 +470,6 @@ address {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-  .header-logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
 @media screen and (min-width: 768px) {
   .connect__list {
     display: flex;
@@ -494,6 +485,26 @@ address {
   .header-tel {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .header-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .connect__list {
+    gap: 30px;
+  }
+  .header-tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-mail {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .hero {
