@@ -2,7 +2,7 @@
     background-color: var(--background-color);
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,
     url(../images/hero-bg-mob.png);
-    padding: 200px 0px 200px;
+    padding: 118px 0px 118px;
     max-width: 1600px;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -73,6 +73,8 @@ background-color: var(--accent-color);
 
 @media screen and (min-width: 1200px) {
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
 background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,
 url(../images/hero-bg.jpg);
 @media (min-device-pixel-ratio: 2),
@@ -82,7 +84,12 @@ url(../images/hero-bg.jpg);
     url(../images/hero-bgx2.png);
 
 }
-.hero__title {font-size: 44px;
-line-height: 1.36;}
+
+.hero__title {
+  max-width: 696px;
+font-size: 44px;
+line-height: 1.36;
+
+}
 }
 }

@@ -525,7 +525,7 @@ address {
 .hero {
   background-color: var(--background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.png);
-  padding: 200px 0px 200px;
+  padding: 118px 0px 118px;
   max-width: 1600px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -592,6 +592,8 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   }
 }
@@ -602,6 +604,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__title {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -879,7 +882,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
 }
 
@@ -935,6 +938,7 @@ address {
 @media screen and (min-width: 1200px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 50px;
   }
 }
 .card-list {
@@ -997,7 +1001,23 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .card-list {
+    justify-content: baseline;
+  }
+  .card-list-element {
+    width: 370px;
+  }
+  .sliders {
+    max-width: 370px;
+  }
+  .filter-slider {
+    max-width: 370px;
+  }
+  .card-list-element {
+    max-width: 370px;
   }
 }
 /*.footer {

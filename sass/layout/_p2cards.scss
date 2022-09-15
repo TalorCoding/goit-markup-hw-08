@@ -66,6 +66,23 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-    width: 1200px;
+    padding-right: 0;
+    padding-left: 0;
     }
+    .card-list {
+    justify-content: baseline;
+    }
+    .card-list-element {
+        width: 370px;
+    }
+    .sliders {
+        max-width: 370px;
+    }
+    .filter-slider {
+        max-width: 370px;
+    }
+    .card-list-element {
+        max-width: 370px;
+    }
+    
 }
