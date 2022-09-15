@@ -62,7 +62,9 @@ color: var(--text-color);
 
 @media screen and (min-width: 768px) {
     .btn-list{
-    justify-content: center;}
+    justify-content: center;
+    margin-bottom: 30px;
+}
 }
 
 @media screen and (min-width: 1200px) {

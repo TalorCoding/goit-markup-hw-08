@@ -32,13 +32,13 @@ ul {
   transform: 250ms;
 }
 
-.studio {
-  background-color: var(--main-light-color);
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.studio {
+  background-color: var(--main-light-color);
 }
 
 .filter-section {
@@ -70,6 +70,14 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .filter-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 /* Прибирає сині/фіолетові посилання. */
@@ -137,7 +145,13 @@ address {
   height: 100vh;
   padding-bottom: 48px;
 }
-.mob-menu .container {
+
+.menu-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -180,12 +194,12 @@ address {
   margin-bottom: 32px;
 }
 
-.mob-contact-list {
-  margin-top: 302px;
-}
-
 .mobile-contacts {
   padding-left: 25px;
+}
+
+.mob-contact-list {
+  margin-bottom: 64px;
 }
 
 .mobile-contacts:not(:last-child) {
@@ -210,6 +224,7 @@ address {
 
 .mob-soc-list {
   position: relative;
+  padding-left: 25px;
 }
 
 .mob-soc-item {
@@ -560,12 +575,19 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tabx2.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -697,11 +719,11 @@ address {
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__name {
@@ -782,6 +804,11 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
   .team__list {
     flex-wrap: nowrap;
   }
@@ -793,12 +820,12 @@ address {
 }
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -837,6 +864,12 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
   .clients__link {
     width: 170px;
     height: 92px;
@@ -896,6 +929,7 @@ address {
 @media screen and (min-width: 768px) {
   .btn-list {
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -935,6 +969,7 @@ address {
 }
 
 .card-list-element {
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-list-element:hover .filter-slider, .card-list-element:focus .filter-slider {
@@ -1320,16 +1355,16 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 0px;
   }
   .tg-section {
     margin-top: 0;
   }
   .footer-block-1 {
-    align-items: baseline;
-    width: 40%;
-  }
-  .footer__soc {
     width: 50%;
+    justify-content: center;
+    align-items: center;
+    width: default;
   }
   .footer-logo {
     display: flex;
@@ -1339,12 +1374,16 @@ cursor: pointer;
   }
   .footer__content {
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
   }
   .footer__soc {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
+  }
+  .tg-section {
+    margin-top: 60px;
   }
   .online-form {
     width: 450px;
@@ -1364,6 +1403,10 @@ cursor: pointer;
   }
   .footer-block-1 {
     margin-right: 70px;
+    align-items: baseline;
+  }
+  .footer__content {
+    align-items: baseline;
   }
   .footer__soc {
     margin-right: 93px;
@@ -1402,8 +1445,8 @@ cursor: pointer;
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1534,8 +1577,8 @@ cursor: pointer;
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -1608,4 +1651,16 @@ cursor: pointer;
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--main-light-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=main.css.map */

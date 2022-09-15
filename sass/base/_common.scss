@@ -32,15 +32,17 @@ ul {
     transform: 250ms;
 }
 
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .studio {
     background-color: var(--main-light-color);
 }
 
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 .filter-section {
     padding-top: 60px;
@@ -72,7 +74,16 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
+    
     .container {
     width: 1200px;
+    }
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .filter-section {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
